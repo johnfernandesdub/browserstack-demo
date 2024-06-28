@@ -1,0 +1,21 @@
+userName: johnfernandes_1rh305
+accessKey: tQAmxFM77yDVdnJNMNxn
+platforms:
+  - os: Windows
+    osVersion: 10
+    browserName: Chrome
+    browserVersion: 126.0
+  - os: OS X
+    osVersion: Ventura
+    browserName: Firefox
+    browserVersion: 127.0
+  - deviceName: Samsung Galaxy Tab S9
+    osVersion: 13.0
+    browserName: samsung
+    deviceOrientation: portrait
+browserstackLocal: true
+buildName: browserstack-build-1
+projectName: BrowserStack Sample
+debug: true
+networkLogs: true
+consoleLogs: info
