@@ -19,4 +19,4 @@ projectName: BrowserStack Sample
 debug: true
 networkLogs: true
 consoleLogs: info
-acceptInsecureCerts: true
+#acceptInsecureCerts: true

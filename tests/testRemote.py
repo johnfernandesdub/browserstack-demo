@@ -17,17 +17,17 @@ with open('browserstack_config.json') as config_file:
     config = json.load(config_file)
 
 # BrowserStack credentials and URL
-USERNAME = config['userName']
-ACCESS_KEY = config['accessKey']
 BSTACK_USERNAME = config['browserstack_user']
 BSTACK_PASSWORD = config['browserstack_password']
+USERNAME = BSTACK_USERNAME
+ACCESS_KEY = config['accessKey']
 INVITE_URL = config['invite_url']
 BROWSER_STACK_URL = config['brower_stack_url']
 URL = f"https://{USERNAME}:{ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub"
 
 options = ChromeOptions()
 options.accept_insecure_certs=True
-options.set_capability('sessionName', 'BStack Testo')
+#options.set_capability('sessionName', 'BStack Testo')
 
 try:
     logger.info("Logging into BrowserStack Web Site...")
