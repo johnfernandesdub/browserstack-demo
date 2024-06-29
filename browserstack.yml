@@ -16,6 +16,7 @@ platforms:
 browserstackLocal: true
 buildName: browserstack-build-1
 projectName: BrowserStack Sample
+buildIdentifier: '#${BUILD_NUMBER}'
 debug: true
 networkLogs: true
 consoleLogs: info

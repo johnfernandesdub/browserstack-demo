@@ -26,8 +26,9 @@ BROWSER_STACK_URL = config['brower_stack_url']
 URL = f"https://{USERNAME}:{ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub"
 
 options = ChromeOptions()
-options.accept_insecure_certs=True
-#options.set_capability('sessionName', 'BStack Testo')
+#options.accept_insecure_certs=True
+options.set_capability('sessionName', 'BStack Testo')
+options.set_capability('local', 'True')
 
 try:
     logger.info("Logging into BrowserStack Web Site...")
