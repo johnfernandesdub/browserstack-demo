@@ -31,6 +31,8 @@ options.set_capability('local', 'True')
 
 try:
     logger.info("Logging into BrowserStack Test Site...")
+    logger.info(URL)
+    logger.info(BROWSER_URL)
     driver = webdriver.Remote(
         command_executor=URL,
         options=options)
