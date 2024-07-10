@@ -37,6 +37,7 @@ try:
         command_executor=URL,
         options=options)
 
+    logger.info("Obtained a driver...")
     driver.get(BROWSER_URL)
     driver.maximize_window()    
     
