@@ -23,7 +23,8 @@ USERNAME = config['username']
 ACCESS_KEY = config['accessKey']
 OLYMPIC_URL = config['olympic_url']
 BROWSER_URL = config['irish_times_url']
-URL = f"https://{USERNAME}:{ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub"
+#URL = f"https://{USERNAME}:{ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub"
+URL = f"https://{USERNAME}:{ACCESS_KEY}@hub.browserstack.com/wd/hub"
 
 options = ChromeOptions()
 options.set_capability('sessionName', 'BStack Testo')
